@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+  --accent-1: #31c3bd;
+  --accent-1-light: #65e9e4;
+  --accent-1-dark: #118c87;
+
+  --accent-2: #f2b137;
+  --accent-2-light: #ffc860;
+  --accent-2-dark: #cc8b13;
+
+  --neutral: #1f3641;
+  --neutral-dark: #1a2a33;
+  --neutral-darkest: #10212a;
+
+  --neutral-2: #6b8997;
+  --neutral-light: #a8bfc9;
+  --neutral-lightest: #dbe8ed;
+  font-size: 16px;
+}
+
+.App {
+  min-height: 100vh;
+  background: var(--neutral-dark);
+  font-family: 'Outfit', sans-serif;
+  color: var(--neutral-light);
+  font-size: 1rem;
+  padding: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  display: grid;
+  align-items: center;
+  user-select: none;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.scaleUp {
+  transform: scale(0.8);
+  opacity: 0;
+  animation: scaleUp 0.3s forwards;
+}
+
+@keyframes scaleUp {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.container {
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 375px;
+}
+@media (min-width: 960px) {
+  :root {
+    font-size: 18px;
+  }
+  .App {
+    padding: 1rem;
+  }
+  .container {
+    max-width: 460px;
+  }
+}

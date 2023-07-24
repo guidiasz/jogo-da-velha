@@ -1,0 +1,62 @@
+.cell {
+  background-color: var(--neutral);
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  border-radius: 0.9rem;
+  border-bottom: solid 8px var(--neutral-darkest);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell.disabled {
+  pointer-events: none;
+}
+
+.cell.highlight[aria-label='cross'] {
+  background: var(--accent-1);
+}
+.cell.highlight[aria-label='circle'] {
+  background: var(--accent-2);
+}
+
+.cell.highlight > svg {
+  fill: var(--neutral-darkest);
+}
+
+.cell > svg {
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+@media (min-width: 960px) {
+  .cell > svg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.cell:hover:not(.disabled),
+.cell:focus {
+  transform: scale(0.98);
+  border-bottom-width: 6px;
+}
+
+.cell[aria-label='empty'] > svg > path {
+  opacity: 0;
+}
+
+.cell:hover:not(.disabled) > svg > path,
+.cell:focus > svg > path {
+  paint-order: stroke;
+  opacity: 1;
+  fill: transparent;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+}
+
+.cell:focus-visible {
+  outline: solid 1px var(--neutral-lightest);
+}

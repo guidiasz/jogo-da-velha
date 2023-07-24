@@ -1,0 +1,41 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.box {
+  margin: auto;
+  background-color: var(--neutral);
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  opacity: 0;
+}
+
+.box > p {
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.box .mainMessage {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons > button {
+  width: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom-width: 4px;
+}
+
+.buttons > button:first-child {
+  margin-right: 1rem;
+}

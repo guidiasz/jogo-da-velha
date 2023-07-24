@@ -1,0 +1,61 @@
+.button {
+  color: var(--neutral-dark);
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+  padding: 1.375rem 0;
+  transition: 0.3s;
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+}
+
+.button:focus {
+  transform: scale(0.98);
+}
+
+.button:focus-visible {
+  outline: solid 1px var(--neutral-lightest);
+}
+
+.button.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-bottom-width: 4px;
+  border-radius: 0.6rem;
+  padding: 0;
+}
+
+.button.iconButton > svg {
+  width: 16px;
+  height: auto;
+}
+
+.button.accent1 {
+  background: var(--accent-1);
+  border-bottom-color: var(--accent-1-dark);
+}
+.button.accent2 {
+  background: var(--accent-2);
+  border-bottom-color: var(--accent-2-dark);
+}
+.button.neutralLight {
+  background: var(--neutral-light);
+  border-bottom-color: var(--neutral-2);
+}
+.button.accent2:hover,
+.button.accent2:focus {
+  background: var(--accent-2-light);
+}
+.button.neutralLight:hover,
+.button.neutralLight:focus {
+  background: var(--neutral-lightest);
+}
+.button.accent1:hover,
+.button.accent1:focus {
+  background: var(--accent-1-light);
+}

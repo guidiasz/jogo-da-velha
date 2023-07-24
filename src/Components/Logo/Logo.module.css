@@ -1,0 +1,11 @@
+.logo {
+  width: 72px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  justify-self: center;
+}
+
+.logo > img {
+  width: 100%;
+}

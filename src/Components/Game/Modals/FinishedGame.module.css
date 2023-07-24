@@ -1,0 +1,18 @@
+.cross {
+  color: var(--accent-1);
+}
+.circle {
+  color: var(--accent-2);
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner > svg {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.5rem;
+}

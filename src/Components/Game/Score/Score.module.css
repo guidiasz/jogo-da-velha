@@ -1,0 +1,36 @@
+.score {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  color: var(--neutral-dark);
+}
+
+.card {
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 4rem;
+}
+
+.title {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.card span {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.cross {
+  background-color: var(--accent-1);
+}
+.ties {
+  background-color: var(--neutral-light);
+}
+.circle {
+  background-color: var(--accent-2);
+}

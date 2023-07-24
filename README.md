@@ -7,7 +7,7 @@
     <i align="center">Jogue contra uma IA ou contra outra pessoa 🎮</i>
 </p>
 
-Feito com React Hooks, Context e Reducer como parte dos meus estudos de React. A IA utiliza o algoritmo minmax.
+Feito com React Hooks, Context e Reducer como parte dos meus estudos de React. A IA utiliza o algoritmo minmax com uma pequena chance de fazer uma jogada aleatória.
 
 <p align="center">
     <img src="./.github/gameplay.gif" alt="Preview do jogo"/>
